@@ -1,0 +1,126 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f2;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #216b45;
+}
+
+h2 {
+  color: #216b45;
+}
+
+.panel,
+.summary {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #ddd;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #216b45;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #174c31;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  min-width: 140px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #e1eee5;
+}
+
+td button {
+  margin: 2px;
+}
+
+#message {
+  font-weight: bold;
+}
+
+.success {
+  color: #216b45;
+}
+
+.error {
+  color: #c62828;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .summary {
+    display: block;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
